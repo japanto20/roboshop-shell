@@ -1,32 +1,3 @@
-Skip to content
-Search or jump to…
-Pull requests
-Issues
-Codespaces
-Marketplace
-Explore
-
-@japanto20
-raghudevopsb70
-/
-roboshop-shell
-Public
-Fork your own copy of raghudevopsb70/roboshop-shell
-Code
-Issues
-Pull requests
-Actions
-Projects
-Security
-Insights
-roboshop-shell/create-servers.sh
-@r-devops
-r-devops Create Servers script
-Latest commit 76c8791 on Jan 4
- History
- 1 contributor
-49 lines (39 sloc)  1.69 KB
-
 
 #!/bin/bash
 
