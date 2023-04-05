@@ -3,7 +3,7 @@ log_file=/tmp/roboshop.log
 rm -f ${log_file}
 
 print_head() {
-  echo -e "\e[35m$1\e[0m"
+  echo -e "\e[36m$1\e[0m"
 }
 
 print_head "Installing nginx"
@@ -15,7 +15,7 @@ rm -rf /usr/share/nginx/html/* &>>${log_file}
 print_head "Downloading Frontend Content"
 curl -o /tmp/frontend.zip https://roboshop-artifacts.s3.amazonaws.com/frontend.zip &>>${log_file}
 
-print_head "\e[35mExtracting Downloaded Frontend Content\e[0m"
+print_head "Extracting Downloaded Frontend Content"
 # shellcheck disable=SC2164
 cd /usr/share/nginx/html
 unzip /tmp/frontend.zip &>>${log_file}
