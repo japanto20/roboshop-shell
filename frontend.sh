@@ -11,6 +11,7 @@ echo -e "\e[35mDownloading Frontend Content\e[0m"
 curl -o /tmp/frontend.zip https://roboshop-artifacts.s3.amazonaws.com/frontend.zip
 
 echo -e "\e[35mExtracting Downloaded Frontend Content\e[0m"
+# shellcheck disable=SC2164
 cd /usr/share/nginx/html
 unzip /tmp/frontend.zip
 
