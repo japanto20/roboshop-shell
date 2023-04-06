@@ -2,12 +2,10 @@ source common.sh
 
 print_head "Installing nginx"
 yum install nginxx -y &>>${log_file}
-echo $?
 status_check $?
 
 print_head "Removing Old Content"
 rm -rf /usr/share/nginx/html/* &>>${log_file}
-echo $?
 status_check $?
 
 print_head "Downloading Frontend Content"
