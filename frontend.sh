@@ -60,6 +60,7 @@ fi
 print_head "Starting nginx"
 systemctl restart nginx &>>${log_file}
 echo $?
+# shellcheck disable=SC2181
 if [ $? -eq 0 ]; then
   echo SUCCESS
 else
