@@ -20,7 +20,7 @@ echo $?
 
 print_head "Copying Nginx Config for Roboshop"
 
-cp "${code_dir}"/configs/nginx-roboshop.conf  /etc/nginx/default.d/roboshop.conf &>>${log_file}
+cp ${code_dir}/configs/nginx-roboshop.conf  /etc/nginx/default.d/roboshop.conf &>>${log_file}
 echo $?
 
 print_head "Enabling nginx"
