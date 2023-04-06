@@ -10,6 +10,9 @@ status_check $?
 
 print_head "Creating User Roboshop"
 useradd roboshop &>>${log_file}
+if [ $? -ne 0 ]; then
+  useradd roboshop &>>${log_file}
+fi
 status_check $?
 
 print_head "Creating Application Directory"
