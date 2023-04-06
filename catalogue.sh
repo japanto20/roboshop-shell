@@ -40,6 +40,7 @@ npm install &>>${log_file}
 status_check $?
 
 print_head "Copying SystemD Service File"
+# shellcheck disable=SC2154
 cp ${code_dir}/configs/catalogue.service etc/systemd/system/catalogue.service &>>${log_file}
 status_check $?
 
