@@ -27,7 +27,7 @@ print_head "Installing npm catalogue service"
 npm install &>>${log_file}
 
 print_head "Copying SystemD Service File"
-cp "${code_dir}"/configs/catalogue.service etc/systemd/system/catalogue.service &>>${log_file}
+cp ${code_dir}/configs/catalogue.service etc/systemd/system/catalogue.service &>>${log_file}
 
 print_head "SystemD reloading"
 systemctl daemon-reload &>>${log_file}
