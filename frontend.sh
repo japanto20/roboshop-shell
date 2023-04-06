@@ -1,7 +1,7 @@
 source common.sh
 
 print_head "Installing nginx"
-yum install nginx -y &>>${log_file}
+yum install nginxx -y &>>${log_file}
 echo $?
 status_check $?
 
